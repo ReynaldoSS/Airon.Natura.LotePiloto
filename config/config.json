@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "lote-piloto-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/lotePiloto/LotePilotoWebPart.js",
+          "manifest": "./src/webparts/lotePiloto/LotePilotoWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "LotePilotoWebPartStrings": "lib/webparts/lotePiloto/loc/{locale}.js"
+  }
+}
