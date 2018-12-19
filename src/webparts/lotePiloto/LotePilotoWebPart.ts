@@ -48,7 +48,7 @@ export default class LotePilotoWebPart extends BaseClientSideWebPart<ILotePiloto
               </tr>
           </tbody>
       </table>
-      <div id="tabs" class="classTabs">
+      <div id="tabs" class="${ styles.classTabs}">
           <ul>
               <li><a href="#tab-Produto">Produto</a></li>
               <li><a href="#tab-Agendamento">Agendamento</a></li>
