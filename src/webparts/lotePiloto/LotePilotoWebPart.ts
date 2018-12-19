@@ -58,88 +58,69 @@ export default class LotePilotoWebPart extends BaseClientSideWebPart<ILotePiloto
           </ul>
           <div id="tab-Produto">
               <h1>Produto</h1>
-              <div id="produtoControlTitulo">
-                  <div id="produtoTituloObrigatorio" class="title">*</div>
-                  <div id="produtoTituloLabel" class="title">Título</div>
-                  <div id="produtoTituloField">
-                      <input id="produtoTitulo" runat="server" />
-                  </div>
-              </div>
-              <div id="produtoControlStatus">
-                  <div id="produtoStatusLabel" class="title">Status</div>
-                  <div id="produtoStatusField">
-                      <div id="produtoStatus">Status</div>
-                  </div>
-              </div>
-              <div id="produtoControlCodigo">
-                  <div id="produtoCodigoLabel" class="title">Código do produto</div>
-                  <div id="produtoCodigoField">
-                      <input id="produtoCodigo" runat="server" />
-                  </div>
-              </div>
               <div>
-                  <div class="title">Linha do produto</div>
+                  <div class="${ styles.title}">Linha do produto</div>
                   <div>
                       <select id="linhaDoProduto"></select>
                   </div>
               </div>
               <div id="produtoControlDescricao">
-                  <div id="produtoDescricaoLabel" class="title">Descrição do produto</div>
+                  <div id="produtoDescricaoLabel" class="${ styles.title}">Descrição do produto</div>
                   <div id="produtoDescricaoField">
                       <input id="produtoDescricao" runat="server" />
                   </div>
               </div>
               <div id="produtoControlProjeto">
-                  <div id="produtoProjetoLabel" class="title">Projeto</div>
+                  <div id="produtoProjetoLabel" class="${ styles.title}">Projeto</div>
                   <div id="produtoProjetoField">
                       <input id="produtoProjeto" runat="server" />
                   </div>
               </div>
               <div>
-                  <div class="title">Categoria do projeto</div>
+                  <div class="${ styles.title}">Categoria do projeto</div>
                   <div>
                       <select id="categoriaDoProjeto"></select>
                   </div>
               </div>
               <div id="produtoControlTipoLote">
-                  <div id="produtoTipoLoteLabel" class="title">Tipo de Lote</div>
+                  <div id="produtoTipoLoteLabel" class="${ styles.title}">Tipo de Lote</div>
                   <div id="produtoTipoLoteField">
                       <select></select>
                   </div>
               </div>
               <div id="produtoControlFormula">
-                  <div id="produtoFormulaLabel" class="title">Fórmula</div>
+                  <div id="produtoFormulaLabel" class="${ styles.title}">Fórmula</div>
                   <div id="produtoFormulaField">
                       <input id="produtoFormula" runat="server" />
                   </div>
               </div>
               <div id="produtoControlQuantidade">
-                  <div id="produtoQuantidadeLabel" class="title">Quantidade (peças)</div>
+                  <div id="produtoQuantidadeLabel" class="${ styles.title}">Quantidade (peças)</div>
                   <div id="produtoQuantidadeField">
                       <input id="produtoQuantidade" runat="server" />
                   </div>
               </div>
               <div id="produtoControlMotivo">
-                  <div id="produtoMotivoLabel" class="title">Motivo</div>
+                  <div id="produtoMotivoLabel" class="${ styles.title}">Motivo</div>
                   <div id="produtoMotivoField">
                       <select></select>
                   </div>
               </div>
               <div id="produtoControlEnvioAmostras">
-                  <div id="produtoEnvioAmostrasLabel" class="title">Solicitação de envio de amostras</div>
-                  <label class="switch">
+                  <div id="produtoEnvioAmostrasLabel" class="${ styles.title}">Solicitação de envio de amostras</div>
+                  <label class="${ styles.switch}">
                       <input id="produtoEnvioAmostras" type="checkbox">
-                      <span class="slider round"></span>
+                      <span class="${ styles.slider} ${ styles.round}"></span>
                   </label>
               </div>
               <div id="produtoControlResponsavelAmostra">
-                  <div id="produtoResponsavelAmostraLabel" class="title">Responsável pela amostra</div>
+                  <div id="produtoResponsavelAmostraLabel" class="${ styles.title}">Responsável pela amostra</div>
                   <div id="produtoResponsavelAmostraField">
                       <input id="produtoResponsavelAmostra" runat="server" />
                   </div>
               </div>
               <div id="produtoControlQuantidadeAmostra">
-                  <div id="produtoQuantidadeAmostraLabel" class="title">Quantidade de amostras</div>
+                  <div id="produtoQuantidadeAmostraLabel" class="${ styles.title}">Quantidade de amostras</div>
                   <div id="produtoQuantidadeAmostraField">
                       <input id="produtoQuantidadeAmostra" runat="server" />
                   </div>
@@ -148,31 +129,31 @@ export default class LotePilotoWebPart extends BaseClientSideWebPart<ILotePiloto
           <div id="tab-Agendamento">
               <h1>Agendamento</h1>
               <div id="agendamentoControlFabrica">
-                  <div id="agendamentoFabricaLabel" class="title">Fábrica</div>
+                  <div id="agendamentoFabricaLabel" class="${ styles.title}">Fábrica</div>
                   <div id="agendamentoFabricaField">
                       <select></select>
                   </div>
               </div>
               <div id="agendamentoControlLinhaEquipamento">
-                  <div id="agendamentoLinhaEquipamentoLabel" class="title">Linha ou Equipamento</div>
+                  <div id="agendamentoLinhaEquipamentoLabel" class="${ styles.title}">Linha ou Equipamento</div>
                   <div id="agendamentoLinhaEquipamentoField">
                       <select></select>
                   </div>
               </div>
               <div id="agendamentoControlCentroCusto">
-                  <div id="agendamentoCentroCustoLabel" class="title">Centro de custo – PEP – NT</div>
+                  <div id="agendamentoCentroCustoLabel" class="${ styles.title}">Centro de custo – PEP – NT</div>
                   <div id="agendamentoCentroCustoField">
                       <input id="agendamentoCentroCusto" runat="server" />
                   </div>
               </div>
               <div id="agendamentoControlGrauComplexidade">
-                  <div id="agendamentoGrauComplexidadeLabel" class="title">Grau de complexidade</div>
+                  <div id="agendamentoGrauComplexidadeLabel" class="${ styles.title}">Grau de complexidade</div>
                   <div id="agendamentoGrauComplexidadeField">
                       <select></select>
                   </div>
               </div>
               <div id="agendamentoControlDataInicioProgramado">
-                  <div id="agendamentoDataInicioProgramadoLabel" class="title">Início programado</div>
+                  <div id="agendamentoDataInicioProgramadoLabel" class="${ styles.title}">Início programado</div>
                   <div id="agendamentoDataInicioProgramadoField">
                       <input id="agendamentoDataInicioProgramado" runat="server" />
                   </div>
@@ -184,25 +165,25 @@ export default class LotePilotoWebPart extends BaseClientSideWebPart<ILotePiloto
                   </div>
               </div>
               <div id="agendamentoControlDuracaoHora">
-                  <div id="agendamentoDuracaoHoraLabel" class="title">Duração (hh)</div>
+                  <div id="agendamentoDuracaoHoraLabel" class="${ styles.title}">Duração (hh)</div>
                   <div id="agendamentoDuracaoHoraField">
                       <input id="agendamentoDuracaoHora" runat="server" />
                   </div>
               </div>
               <div id="agendamentoControlDuracaoMinuto">
-                  <div id="agendamentoDuracaoMinutoLabel" class="title">Duração (mm)</div>
+                  <div id="agendamentoDuracaoMinutoLabel" class="${ styles.title}">Duração (mm)</div>
                   <div id="agendamentoDuracaoMinutoField">
                       <input id="agendamentoDuracaoMinuto" runat="server" />
                   </div>
               </div>
               <div id="agendamentoControlFim">
-                  <div id="agendamentoFimLabel" class="title">Fim programado (calculado)</div>
+                  <div id="agendamentoFimLabel" class="${ styles.title}">Fim programado (calculado)</div>
                   <div id="agendamentoFimField">
                       <div id="agendamentoFim"></div>
                   </div>
               </div>
               <div id="agendamentoControlObservacoes">
-                  <div id="agendamentoObservacoesLabel" class="title">Observações</div>
+                  <div id="agendamentoObservacoesLabel" class="${ styles.title}">Observações</div>
                   <div id="agendamentoObservacoesField">
                       <input id="agendamentoObservacoes" runat="server" />
                   </div>
@@ -210,7 +191,7 @@ export default class LotePilotoWebPart extends BaseClientSideWebPart<ILotePiloto
           </div>
           <div id="tab-Responsaveis">
               <div>
-                  <div class="title">Tipo de Lote</div>
+                  <div class="${ styles.title}">Tipo de Lote</div>
                   <div>
                       <select id="tipoDeLote">
                           <option value="Brinde">Brinde</option>
@@ -220,7 +201,7 @@ export default class LotePilotoWebPart extends BaseClientSideWebPart<ILotePiloto
                       </select>
                   </div>
               </div>
-              <div id="tabsResponsaveis" class="classTabs">
+              <div id="tabsResponsaveis" class="${ styles.classTabs}">
                   <ul>
                       <li><a href="#tab-RespDLPCL">DL/PCL</a></li>
                       <li><a href="#tab-RespEngEnv">Eng. Envase</a></li>
@@ -250,7 +231,7 @@ export default class LotePilotoWebPart extends BaseClientSideWebPart<ILotePiloto
               </div>
           </div>
           <div id="tab-Acompanhamento">
-              <div id="tabsAcompanhamento" class="classTabs">
+              <div id="tabsAcompanhamento" class="${ styles.classTabs}">
                   <ul>
                       <li><a href="#tab-AcompDLPCL">DL/PCL</a></li>
                       <li><a href="#tab-AcompEngEnv">Eng. Envase</a></li>
